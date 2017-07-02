@@ -8,21 +8,31 @@ table, th, td {
 }
 table {
 	border-collapse: collapse;
-	    margin: auto;
+	margin: auto;
+	height: 50%;
+    width: 50%;
 }
 body {
     background-color: hsl(40, 100%, 70%);
 	direction: rtl;
 }
-th {
+th.nemes {
 	font-family: Georgia, serif;
+	font-size: 140%
 }
 td {
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	background-color: Red
+	background-color: Red;
+    font-size: 140%
 }
 h1 {
 	text-align: center;
+}
+td.done {
+	color: rgb(128,128,128);
+	background-color: rgb(100, 255, 100);
+    text-decoration: line-through;
+	font-size: 140%
 }
 </style>
 </head>
@@ -30,19 +40,19 @@ h1 {
 <h1>טבלת משימות מישפחתיות</h1>
 <table>
   <tr>
-    <th>אפרים</th>
-    <th>נעמה</th>
-	<th>רעות</th>
-	<th>שירה</th>
+    <th class ="nemes">אפרים</th>
+    <th class ="nemes">נעמה</th>
+	<th class ="nemes">רעות</th>
+	<th class ="nemes">שירה</th>
   </tr>
   <tr>
-    <td>מדיח חלבי </td>
+    <td class="done">מדיח חלבי </td>
     <td>לרוקן פחים</td>
 	<td>לרוקן סל כביסה</td>
 	<td>לנגב ארונות מטבח</td>
   </tr>
   <tr>
-    <td>מדיח בשרי</td>
+    <td class="done">מדיח בשרי</td>
     <td>לנקות מקלחונים</td>
 	<td>משימה</td>
 	<td></td>
