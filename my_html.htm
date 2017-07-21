@@ -39,6 +39,15 @@ table {
     height: 60%;
 }
 </style>
+<script>
+function changeClass(id) {
+	if (id.className == "done") {
+		id.className = "";
+		return;
+	}
+	id.className = "done";
+}
+</script>
 </head>
 <body>
 <h1>טבלת משימות מישפחתיות</h1>
@@ -50,28 +59,28 @@ table {
 	<th class ="nemes">שירה</th>
   </tr>
   <tr>
-    <td class="done">מדיח חלבי </td>
-    <td>לרוקן פחים</td>
-	<td>לרוקן סל כביסה</td>
-	<td>לנגב ארונות מטבח</td>
+    <td onclick = "changeClass(this)">מדיח חלבי </td>
+    <td onclick = "changeClass(this)">לרוקן פחים</td>
+	<td onclick = "changeClass(this)">לרוקן סל כביסה</td>
+	<td onclick = "changeClass(this)">לנגב ארונות מטבח</td>
   </tr>
   <tr>
-    <td class="done">מדיח בשרי</td>
-    <td>לנקות מקלחונים</td>
-	<td>משימה</td>
-	<td></td>
+    <td onclick = "changeClass(this)">מדיח בשרי</td>
+    <td onclick = "changeClass(this)">לנקות מקלחונים</td>
+	<td onclick = "changeClass(this)">משימה</td>
+	<td onclick = "changeClass(this)"></td>
   </tr>
     <tr>
-    <td></td>
-    <td>להעביר מכונה ליבוש</td>
-	<td>משימה</td>
-	<td></td>
+    <td onclick = "changeClass(this)"></td>
+    <td onclick = "changeClass(this)">להעביר מכונה ליבוש</td>
+	<td onclick = "changeClass(this)">משימה</td>
+	<td onclick = "changeClass(this)"></td>
   </tr>
-    <tr>
-    <td></td>
-    <td>משימה</td>
-	<td>משימה</td>
-	<td></td>
+  <tr>
+    <td onclick = "changeClass(this)"></td>
+    <td onclick = "changeClass(this)">משימה</td>
+	<td onclick = "changeClass(this)">משימה</td>
+	<td onclick = "changeClass(this)"></td>
   </tr>
 </table>
 
