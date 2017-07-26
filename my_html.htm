@@ -47,6 +47,8 @@ function changeClass(id) {
 	}
 	id.className = "done";
 }
+var x = 0;
+document.getElementById("demo").innerHTML = x;
 </script>
 </head>
 <body>
@@ -83,6 +85,6 @@ function changeClass(id) {
 	<td onclick = "changeClass(this)"></td>
   </tr>
 </table>
-
+<h3 id = "demo"></h3>
 </body>
 </html>
