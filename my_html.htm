@@ -47,11 +47,16 @@ function changeClass(id) {
 	}
 	id.className = "done";
 }
-var x = 0;
-document.getElementById("demo").innerHTML = x;
+function initValues() {
+	var x = 0;
+	document.getElementById("demo").innerHTML = "נקודות מישפחתיות: " + x;
+	for (i = 0; i < document.getElementsByTagName("TD").length‏; i++) {
+		document.getElementsByTagName("td")[i].setAttribute("onclick", "changeClass(this)");
+	}
+}
 </script>
 </head>
-<body>
+<body onload = "initValues()">
 <h1>טבלת משימות מישפחתיות</h1>
 <table>
   <tr>
@@ -61,28 +66,28 @@ document.getElementById("demo").innerHTML = x;
 	<th class ="nemes">שירה</th>
   </tr>
   <tr>
-    <td onclick = "changeClass(this)">מדיח חלבי </td>
-    <td onclick = "changeClass(this)">לרוקן פחים</td>
-	<td onclick = "changeClass(this)">לרוקן סל כביסה</td>
-	<td onclick = "changeClass(this)">לנגב ארונות מטבח</td>
+    <td>מדיח חלבי </td>
+    <td>לרוקן פחים</td>
+	<td>לרוקן סל כביסה</td>
+	<td>לנגב ארונות מטבח</td>
   </tr>
   <tr>
-    <td onclick = "changeClass(this)">מדיח בשרי</td>
-    <td onclick = "changeClass(this)">לנקות מקלחונים</td>
-	<td onclick = "changeClass(this)">משימה</td>
-	<td onclick = "changeClass(this)"></td>
+    <td>מדיח בשרי</td>
+    <td>לנקות מקלחונים</td>
+	<td>משימה</td>
+	<td></td>
   </tr>
     <tr>
-    <td onclick = "changeClass(this)"></td>
-    <td onclick = "changeClass(this)">להעביר מכונה ליבוש</td>
-	<td onclick = "changeClass(this)">משימה</td>
-	<td onclick = "changeClass(this)"></td>
+    <td></td>
+    <td>להעביר מכונה ליבוש</td>
+	<td>משימה</td>
+	<td></td>
   </tr>
   <tr>
-    <td onclick = "changeClass(this)"></td>
-    <td onclick = "changeClass(this)">משימה</td>
-	<td onclick = "changeClass(this)">משימה</td>
-	<td onclick = "changeClass(this)"></td>
+    <td></td>
+    <td>משימה</td>
+	<td>משימה</td>
+	<td></td>
   </tr>
 </table>
 <h3 id = "demo"></h3>
